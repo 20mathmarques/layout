@@ -1,0 +1,58 @@
+.div {
+  height: 88px;
+  top: 24px;
+  background-color: #ffff;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+
+.MuiFilledInput-root::before {
+  border-bottom: none !important;
+  text-transform: capitalize !important;
+}
+
+.MuiInputBase-root {
+  width: 565px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.BtnSearch {
+  box-shadow: none !important ;
+  height: 40px;
+  border-radius: 8px;
+  width: 119px;
+  background-color: #faa500 !important;
+  font-family: "TitilliumWeb" !important;
+  text-transform: capitalize !important;
+}
+
+.Btngroup {
+  list-style-type: none;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  height: 21px;
+}
+
+.Btngroup-Cart{
+  list-style-type: none;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  height: 21px;
+  border: 1px solid #FAA500;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.MyAccount {
+  font-family: "TitilliumWeb" !important;
+  text-transform: capitalize !important;
+  font-weight: 400 !important;
+  font-size: 14px;
+  color: #353535 !important;
+}
+
+

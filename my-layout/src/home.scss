@@ -1,0 +1,16 @@
+$mobile: 360px;
+$desktop: 1920px;
+
+.tittle {
+  font-family: "TitilliumWeb";
+  color: #353535;
+}
+//declarando variavel de tamanho
+
+//Mobile First
+
+@media (max-width: $mobile) {
+  .tittle {
+    justify-content: center;
+  }
+}
