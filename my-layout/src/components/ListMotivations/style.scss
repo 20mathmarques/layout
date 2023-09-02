@@ -1,0 +1,42 @@
+//declarando variavel de tamanho
+$mobile: 360px;
+$tablet: 820px;
+$desktop: 1200px;
+
+
+  
+.List {
+  background-color: #ffff;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  height: 64px;
+}
+
+.Btngroup {
+    list-style-type: none;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    height: 21px;
+  }
+@media (max-width: $tablet) {
+  .tittle {
+    background-color: #ffff;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    height: 48px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .tittle {
+    font-family: "TitilliumWeb";
+    color: #ffff;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+}

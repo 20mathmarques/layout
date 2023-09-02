@@ -1,16 +1,47 @@
+//declarando variavel de tamanho
 $mobile: 360px;
-$desktop: 1920px;
-
+$tablet: 820px;
+$desktop: 1200px;
 .tittle {
   font-family: "TitilliumWeb";
   color: #353535;
 }
-//declarando variavel de tamanho
 
 //Mobile First
 
-@media (max-width: $mobile) {
-  .tittle {
-    justify-content: center;
-  }
+// @media  (max-width: $tablet) {
+//   .whyMaestra {
+//     font-family: "TitilliumWeb";
+//     color: #353535;
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: 24.34px;
+//     text-align: center;
+//   }
+// }
+
+// @media  (min-width: $desktop) {
+//   .whyMaestra {
+//     font-family: "TitilliumWeb";
+//     color: #353535;
+//     font-weight: 700;
+//     font-size: 12px;
+//     line-height: 18px;
+//     text-align: center;
+//   }
+// }
+
+.whyMaestra {
+  font-family: "TitilliumWeb";
+  color: #353535;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  padding: 10px;
+}
+
+.BodyHeader{
+  align-items: center;
+  text-align: center;
 }

@@ -12,7 +12,6 @@ import HeartlLogo from "../../../assets/icon-heart.svg";
 import BagLogo from "../../../assets/bag-icon.svg";
 import DressIcon from "../../../assets/icon-dress.svg";
 
-
 function MenuDesktop() {
   return (
     <>
@@ -31,39 +30,73 @@ function MenuDesktop() {
           </Button>
         </div>
 
-        <li className="Btngroup">
-          {" "}
-          <img src={PerfilLogo} width="14px" height="16px"></img>{" "}
-          <Button className="menuTittle" variant="text">
-            Minha Conta
-          </Button>
-        </li>
+        <ul className="GroupMenu">
+          <li className="Btngroup">
+            {" "}
+            <img src={PerfilLogo} width="14px" height="16px"></img>{" "}
+            <Button className="menuTittle" variant="text">
+              Minha Conta
+            </Button>
+          </li>
 
-        <li className="Btngroup">
-          {" "}
-          <img src={HeartlLogo} width="14px" height="16px"></img>{" "}
-          <Button className="menuTittle" variant="text">
-            Minha Lista
-          </Button>
-        </li>
+          <li className="Btngroup">
+            {" "}
+            <img src={HeartlLogo} width="14px" height="16px"></img>{" "}
+            <Button className="menuTittle" variant="text">
+              Minha Lista
+            </Button>
+          </li>
 
-        <li className="Btngroup-Cart">
-          {" "}
-          <img src={BagLogo} width="14px" height="16px"></img>{" "}
-          <Button className="menuTittle" variant="text">
-            Minha Lista
-          </Button>
-        </li>
+          <li className="Btngroup-Cart">
+            {" "}
+            <img src={BagLogo} width="14px" height="16px"></img>{" "}
+            <Button className="menuTittle" variant="text">
+              Minha Lista
+            </Button>
+          </li>
+        </ul>
       </div>
 
       <div className="SecondLine">
-        <li className="Btngroup">
-          {" "}
-          <img src={DressIcon} width="16px" height="16px"></img>{" "}
-          <Button className="menuTittleNew" variant="text">
-            Novidade
+        <ul className="GroupMenuSecond">
+          <li className="Btngroup">
+            {" "}
+            <img src={DressIcon} width="16px" height="16px"></img>{" "}
+            <Button className="menuTittleNew" variant="text">
+              Novidades
+            </Button>
+          </li>
+          <Button className="menuTittle" variant="text">
+            Vestidos
           </Button>
-        </li>
+
+          <li className="Btngroup">
+            <Button className="menuTittle" variant="text">
+              Roupas
+            </Button>
+          </li>
+          <li className="Btngroup">
+            <Button className="menuTittle" variant="text">
+              Sapatos
+            </Button>
+          </li>
+          <li className="Btngroup">
+            <Button className="menuTittle" variant="text">
+              Lingerie
+            </Button>
+          </li>
+          <li className="Btngroup">
+            <Button className="menuTittle" variant="text">
+              Acessórios
+            </Button>
+          </li>
+
+          <li className="Btngroup">
+            <Button className="menuTittle" variant="text">
+              OUTLET
+            </Button>
+          </li>
+        </ul>
       </div>
     </>
   );

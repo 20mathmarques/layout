@@ -5,20 +5,30 @@
   justify-content: space-around;
   display: flex;
   align-items: center;
-  box-shadow: 0px 5px 11px #F1F1F1;
-
+  box-shadow: 0px 5px 11px #f1f1f1;
+  margin-bottom: 11px;
 }
 
-.SecondLine{
-  
+.GroupMenu {
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+
+.GroupMenuSecond{
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  width: 75%;
+}
+
+.SecondLine {
   background-color: #ffff;
   justify-content: space-around;
   display: flex;
   align-items: center;
   height: 48px;
-
 }
-
 
 .MuiFilledInput-root::before {
   border-bottom: none !important;
@@ -49,13 +59,13 @@
   height: 21px;
 }
 
-.Btngroup-Cart{
+.Btngroup-Cart {
   list-style-type: none;
   align-items: center;
   display: flex;
   text-align: center;
   height: 21px;
-  border: 1px solid #FAA500;
+  border: 1px solid #faa500;
   border-radius: 8px;
   padding: 10px;
 }
@@ -68,15 +78,19 @@
   color: #353535 !important;
 }
 
-.menuTittle:hover {background-color: #faa70049  !important;
+.menuTittle:hover {
+  background-color: #faa70049 !important;
 }
 
-.menuTittleNew{
-  font-size: 14px;
-  font-family: "TitilliumWeb" ;
-  font-weight: 700;
-color:#FAA500
+.menuTittleNew {
+  font-size: 14px !important;
+  font-family: "TitilliumWeb" !important ;
+  font-weight: 700 !important;
+  color: #faa500 !important;
+  text-transform: capitalize !important;
+  text-align: center;
 }
 
-
-
+.menuTittleNew:hover {
+  background-color: #faa70049 !important;
+}

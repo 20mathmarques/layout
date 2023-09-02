@@ -9,7 +9,7 @@ $desktop: 1200px;
   background-color: #353535;
 }
 
-@media (min-width: $mobile) and (max-width: $tablet) {
+@media  (max-width: $tablet) {
   .tittle {
     font-family: "TitilliumWeb";
     color: #ffff;
