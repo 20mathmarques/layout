@@ -1,3 +1,7 @@
+$mobile: 360px;
+$tablet: 820px;
+$desktop: 1200px;
+
 * {
   margin: 0;
   padding: 0;
@@ -12,5 +16,15 @@ body {
     font-family: 'TitilliumWeb';
     src: url(./../fonts/TitilliumWeb-Regular.ttf);
   }
+
+
+@media(min-width: $desktop) { *::-webkit-scrollbar {
+    height: 6px;
+    background-color: #dfdfdf49;
+    border-radius: 20px;
+  
+  }
+    
+}
 }
 
