@@ -1,18 +1,28 @@
 // import logo from './logo.svg';
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./header.scss";
 import MenuMobile from "./mobile/MenuMobile";
 import MenuDesktop from "./desktop/MenuDesktop";
 
-const SizePage = window.innerWidth;
+
 
 
 function Header() {
+  const [SizePage, setSizePage] = useState(window.innerWidth);
+  const updateWindowWidth = () => {
+    setSizePage(window.innerWidth);
+  };
+  
 
-  useEffect(() =>{
+  useEffect(() => {
+    // Adicione um ouvinte de evento de redimensionamento à janela
+    window.addEventListener('resize', updateWindowWidth);
 
-  },[SizePage])
-
+    // Remova o ouvinte de evento quando o componente for desmontado
+    return () => {
+      window.removeEventListener('resize', updateWindowWidth);
+    };
+  }, []);
   console.log(SizePage)
 
 

@@ -5,7 +5,20 @@
   justify-content: space-around;
   display: flex;
   align-items: center;
+  box-shadow: 0px 5px 11px #F1F1F1;
+
 }
+
+.SecondLine{
+  
+  background-color: #ffff;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  height: 48px;
+
+}
+
 
 .MuiFilledInput-root::before {
   border-bottom: none !important;
@@ -47,12 +60,23 @@
   padding: 10px;
 }
 
-.MyAccount {
+.menuTittle {
   font-family: "TitilliumWeb" !important;
   text-transform: capitalize !important;
   font-weight: 400 !important;
   font-size: 14px;
   color: #353535 !important;
 }
+
+.menuTittle:hover {background-color: #faa70049  !important;
+}
+
+.menuTittleNew{
+  font-size: 14px;
+  font-family: "TitilliumWeb" ;
+  font-weight: 700;
+color:#FAA500
+}
+
 
 
