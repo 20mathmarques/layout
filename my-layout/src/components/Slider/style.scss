@@ -1,5 +1,22 @@
 .divSlider{
-    height: 600px;
-    background-color: #f1f1f1;
-    margin: 5%;
+    background-color: #ffff;
+}
+
+.MuiMobileStepper-dotActive{
+    background-color: #FAA500 !important;
+    color:#FAA500;
+    size: 8px;
+    height: 8px;
+}
+
+.MuiMobileStepper-dot{
+    background-color: transparent !important;
+    border: 1px solid #FAA500;
+    
+    height: 8px;
+}
+
+.MuiButtonBase-root{
+    color: #000 !important;
+    margin-top: -10%;
 }

@@ -6,11 +6,11 @@ $desktop: 1200px;
 //Mobile First
 
 .firstBanner {
-  background-color: #353535;
+  background-color: #353535 !important;
 }
 
 @media  (max-width: $tablet) {
-  .tittle {
+  .tittleFirstBanner {
     font-family: "TitilliumWeb";
     color: #ffff;
     font-weight: 400;
@@ -21,7 +21,7 @@ $desktop: 1200px;
 }
 
 @media  (min-width: $desktop) {
-  .tittle {
+  .tittleFirstBanner {
     font-family: "TitilliumWeb";
     color: #ffff;
     font-weight: 400;

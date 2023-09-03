@@ -27,7 +27,7 @@ function FooterMobile() {
 
   return (
     <div className="divFooterMobile">
-      <div className="FirstLine">
+      <div className="FirstLineFooterMobile">
         <Accordion
           expanded={expanded === "panel1"}
           onChange={handleChange("panel1")}
@@ -108,7 +108,7 @@ function FooterMobile() {
         </Accordion>
       </div>
 
-      <div className="SecondLine">
+      <div className="SecondLineFooterMobile">
         <Grid container spacing={2} className="divNetWorkMobile">
           <Grid item xs={2} md={8}>
             <img src={facebook}></img>

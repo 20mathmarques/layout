@@ -1,14 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
 import Home from './Home';
 import ModalMobile from './components/ModalMobile/ModalMobile';
+import ModalDesktop from './components/ModalDesktop/ModalDesktop';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const SizePage = window.innerWidth
+
+
 root.render(
+  
   <React.StrictMode>
     {/* fazer validação de tamanho */}
-    <ModalMobile/> 
+    {SizePage <= 820 ? <ModalMobile/>  : <ModalDesktop/> }
+    
     <Home />
   </React.StrictMode>
 );

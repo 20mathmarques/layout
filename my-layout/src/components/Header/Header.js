@@ -23,7 +23,7 @@ function Header() {
   return (
     <div className="header">
       <div className="firstBanner">
-        <p className="tittle">
+        <p className="tittleFirstBanner">
           Acompanhe as melhores promoções disponíveis aqui na Maeztra.
         </p>
       </div>

@@ -1,43 +1,52 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Modal from '@mui/material/Modal';
-import emailIcon from "../../../assets/newsletter-mail-icon.svg";
+import * as React from "react";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Modal from "@mui/material/Modal";
+import emailIcon from "../../assets/newsletter-mail-icon.svg";
+import SendIcon from "../../assets/send-icon.svg";
+import "./style.scss";
 
-const style = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: 400,
-  bgcolor: 'background.paper',
-  border: '2px solid #000',
-  boxShadow: 24,
-  p: 4,
-};
-
-export default function ModalMobile() {
+function ModalMobile() {
   const [open, setOpen] = React.useState(true);
-//   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
   return (
     <div>
-      {/* <Button onClick={handleOpen}>Open modal</Button> */}
       <Modal
         open={open}
         onClose={handleClose}
-        className='ModalMobile'
+        className="ModalMobile"
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
-             <img src={emailIcon}></img>
+        <Box className="BoxModalMobile">
+          <p onClick={handleClose} className="CloseModalText">
+            Fechar
+          </p>
 
-            <p className='BenvindoText'>Bem Vindo à MAEZTRA</p>
-         
+          <img src={emailIcon} className="emaiLogo"></img>
+
+          <p className="BenvindoText">Bem Vindo à MAEZTRA</p>
+          <p className="RecebaText">Receba em Primeira mão</p>
+          <p className="DescontoText">desconto e ofertas Exclusivas</p>
+          <div className="DivInputModalMobile">
+            <input
+              className="InputNewsLetterModal"
+              placeholder="Digite seu e-mail"
+            ></input>
+          </div>
+          <div className="DivBtnModalMobile">
+            <Button
+              className="BtnSendMobile"
+              variant="contained"
+              endIcon={<img src={SendIcon} />}
+            >
+              Enviar
+            </Button>
+          </div>
         </Box>
       </Modal>
     </div>
   );
 }
+export default ModalMobile;
