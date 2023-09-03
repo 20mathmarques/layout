@@ -5,19 +5,31 @@ import Header from "./components/Header/Header";
 import Slider from "./components/Slider/Slider";
 import ListMotivations from "./components/ListMotivations/ListMotivations";
 import ListBrands from "./components/ListBrands/ListBrands";
+import Vitrine from "./components/Vitrine/Vitrine";
+import Banner from "./components/Banner/Banner";
+import Newsletter from "./components/Newsletter/Newsletter";
+import Footer from "./components/Footer/Footer";
 function Home() {
   return (
-    <div >
-      <Header/>
-        <Slider/>
+    <>
+      <header>
+        <Header />
+      </header>
+      <body>
+        <Slider />
         <p className="whyMaestra"> Por que comprar na Maeztra?</p>
-        <ListMotivations/>
+        <ListMotivations />
         <p className="Brands"> Marcas Parceiras</p>
-        <ListBrands/>
+        <ListBrands />
         <p className="Brands"> As Mais Pedidas</p>
-
-
-    </div>
+        <Vitrine />
+        <Banner />
+        <Newsletter />
+      </body>
+      <footer>
+        <Footer/>
+      </footer>
+    </>
   );
 }
 

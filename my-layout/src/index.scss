@@ -24,6 +24,12 @@ body {
     border-radius: 20px;
   
   }
+}
+
+  @media(max-width: $mobile) { *::-webkit-scrollbar {
+   display: none;
+  
+  }
     
 }
 }

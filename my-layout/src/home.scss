@@ -8,15 +8,7 @@ $desktop: 1200px;
 }
 
 
-.whyMaestra {
-  font-family: "TitilliumWeb";
-  color: #353535;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 18px;
-  text-align: center;
-  margin: 5%;
-}
+
 
 .BodyHeader{
   align-items: center;
@@ -34,6 +26,15 @@ $desktop: 1200px;
      text-align: center;
      margin: 6%;
    }
+   .whyMaestra {
+    font-family: "TitilliumWeb";
+    color: #353535;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    margin: 7%;
+  }
  }
  @media  (min-width: $desktop) {
    .Brands {
@@ -45,4 +46,14 @@ $desktop: 1200px;
      text-align: center;
      margin: 3%;
    }
+
+   .whyMaestra {
+    font-family: "TitilliumWeb";
+    color: #353535;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    margin: 5%;
+  }
  }

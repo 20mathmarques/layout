@@ -57,7 +57,7 @@ function MenuDesktop() {
         </ul>
       </div>
 
-      <div className="SecondLine">
+      <div className="SecondLineHeader">
         <ul className="GroupMenuSecond">
           <li className="Btngroup">
             {" "}
