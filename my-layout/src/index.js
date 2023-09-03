@@ -2,10 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
 import Home from './Home';
+import ModalMobile from './components/ModalMobile/ModalMobile';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <ModalMobile/>
     <Home />
   </React.StrictMode>
 );
