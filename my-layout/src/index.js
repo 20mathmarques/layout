@@ -7,7 +7,8 @@ import ModalMobile from './components/ModalMobile/ModalMobile';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ModalMobile/>
+    {/* fazer validação de tamanho */}
+    <ModalMobile/> 
     <Home />
   </React.StrictMode>
 );
