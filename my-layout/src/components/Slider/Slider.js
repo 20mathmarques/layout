@@ -21,13 +21,13 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 function Slider() {
   const images = [
     {
-      imgPath: { bannerMobileFirst },
+      imgPath:  BannerDesktop ,
     },
     {
-      imgPath: { bannerMobileFirst },
+      imgPath:  BannerDesktop ,
     },
     {
-      imgPath: { bannerMobileFirst },
+      imgPath: BannerDesktop ,
     },
   ];
 
@@ -56,6 +56,7 @@ function Slider() {
           onChangeIndex={handleStepChange}
           enableMouseEvents
         >
+          {/* arrumar imagem pra deskop e mobile */}
           {images.map((step, index) => (
             <div key={step.imgPath}>
               {Math.abs(activeStep - index) <= 2 ? (
@@ -66,7 +67,7 @@ function Slider() {
                     overflow: "hidden",
                     width: "100%",
                   }}
-                  src={BannerDesktop}
+                  src={step.imgPath}
                 />
               ) : null}
 

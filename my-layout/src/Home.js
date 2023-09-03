@@ -22,7 +22,7 @@ function Home() {
         <p className="Brands"> Marcas Parceiras</p>
         <ListBrands />
         <p className="Brands"> As Mais Pedidas</p>
-        <Vitrine />
+        {/* <Vitrine /> */}
         <Banner />
         <Newsletter />
       </body>
